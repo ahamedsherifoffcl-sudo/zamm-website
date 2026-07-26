@@ -1,0 +1,460 @@
+/* =========================================================
+   Alternating Zamm black and gold sections
+   Applies only below the first hero on every page.
+   Hero sections remain untouched.
+   ========================================================= */
+
+:root{
+  --zamm-black:#05070a;
+  --zamm-black-soft:#0b1017;
+  --zamm-gold:#e9b12f;
+  --zamm-gold-deep:#b97908;
+  --zamm-gold-light:#f7d77b;
+  --zamm-cream:#fff8e7;
+  --zamm-ink:#09111d;
+  --zamm-muted-dark:#314154;
+  --zamm-muted-light:#d2cec4;
+}
+
+/* Remove the full-black canvas introduced by the previous theme. */
+main{
+  background:transparent!important;
+}
+
+/* ---------------------------------------------------------
+   Gold sections
+   --------------------------------------------------------- */
+main > .zamm-posthero-theme.zamm-posthero-gold{
+  color:var(--zamm-ink)!important;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,255,255,.42),transparent 28%),
+    radial-gradient(circle at 8% 92%,rgba(120,73,0,.12),transparent 30%),
+    linear-gradient(135deg,#f7d77b 0%,#e9b12f 48%,#c88a14 100%)!important;
+  border-top:1px solid rgba(255,255,255,.36)!important;
+  border-bottom:1px solid rgba(91,51,0,.25)!important;
+}
+
+main > .zamm-posthero-theme.zamm-posthero-gold::before{
+  opacity:.18!important;
+  background-image:
+    linear-gradient(rgba(68,39,0,.10) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(68,39,0,.10) 1px,transparent 1px)!important;
+}
+
+/* Gold-section typography */
+.zamm-posthero-gold h1,
+.zamm-posthero-gold h2,
+.zamm-posthero-gold h3,
+.zamm-posthero-gold h4,
+.zamm-posthero-gold h5,
+.zamm-posthero-gold h6,
+.zamm-posthero-gold .section-title,
+.zamm-posthero-gold .section-heading{
+  color:var(--zamm-ink)!important;
+  text-shadow:0 1px 0 rgba(255,255,255,.30)!important;
+}
+
+.zamm-posthero-gold p,
+.zamm-posthero-gold li,
+.zamm-posthero-gold dd,
+.zamm-posthero-gold address,
+.zamm-posthero-gold .muted,
+.zamm-posthero-gold .section-subtitle,
+.zamm-posthero-gold .section-copy{
+  color:#253448!important;
+}
+
+.zamm-posthero-gold .eyebrow,
+.zamm-posthero-gold .section-kicker,
+.zamm-posthero-gold .overline,
+.zamm-posthero-gold .label{
+  color:#5b3700!important;
+}
+
+.zamm-posthero-gold a:not(.btn){
+  color:#563200!important;
+  text-decoration-color:rgba(86,50,0,.38)!important;
+}
+
+.zamm-posthero-gold a:not(.btn):hover{
+  color:#1b1205!important;
+}
+
+/* Light raised cards on gold sections */
+.zamm-posthero-gold :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form,
+  .map-frame,
+  .mission-card,
+  .vision-card,
+  .serve-card,
+  .stat-card,
+  .feature-card,
+  .content-card
+){
+  color:var(--zamm-ink)!important;
+  border:1px solid rgba(82,48,0,.18)!important;
+  background:
+    linear-gradient(145deg,rgba(255,251,239,.98),rgba(255,241,202,.96))!important;
+  box-shadow:
+    inset 4px 0 0 #7d4b00,
+    inset 0 1px 0 rgba(255,255,255,.95),
+    0 14px 30px rgba(91,52,0,.15),
+    0 28px 60px rgba(91,52,0,.11)!important;
+}
+
+.zamm-posthero-gold :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form
+) h3,
+.zamm-posthero-gold .faq summary{
+  color:var(--zamm-ink)!important;
+}
+
+.zamm-posthero-gold :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form
+) p{
+  color:#405064!important;
+}
+
+/* Gold section forms */
+.zamm-posthero-gold :is(input,textarea,select){
+  color:var(--zamm-ink)!important;
+  caret-color:#7d4b00!important;
+  border:1px solid rgba(87,50,0,.20)!important;
+  background:#fffaf0!important;
+  box-shadow:
+    inset 0 2px 6px rgba(94,53,0,.07),
+    0 8px 18px rgba(94,53,0,.08)!important;
+}
+
+.zamm-posthero-gold :is(input,textarea,select)::placeholder{
+  color:#756c5d!important;
+}
+
+.zamm-posthero-gold label{
+  color:var(--zamm-ink)!important;
+}
+
+/* Gold section buttons */
+.zamm-posthero-gold .btn-primary,
+.zamm-posthero-gold .btn-gold,
+.zamm-posthero-gold .btn:not(.btn-light):not(.btn-outline){
+  color:#fff!important;
+  border-color:#07182c!important;
+  background:
+    linear-gradient(180deg,#14243a 0%,#07182c 100%)!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 12px 26px rgba(7,24,44,.20)!important;
+}
+
+.zamm-posthero-gold .btn-light{
+  color:#07182c!important;
+  background:#fff!important;
+  border-color:#fff!important;
+}
+
+.zamm-posthero-gold .btn-outline{
+  color:#07182c!important;
+  border-color:rgba(7,24,44,.40)!important;
+  background:rgba(255,255,255,.26)!important;
+}
+
+/* ---------------------------------------------------------
+   Black sections
+   --------------------------------------------------------- */
+main > .zamm-posthero-theme.zamm-posthero-black{
+  color:#f7f4ec!important;
+  background:
+    radial-gradient(circle at 92% 8%,rgba(233,177,47,.14),transparent 28%),
+    radial-gradient(circle at 8% 92%,rgba(233,177,47,.055),transparent 30%),
+    linear-gradient(145deg,#05070a 0%,#080c12 54%,#0c1118 100%)!important;
+  border-top:1px solid rgba(233,177,47,.11)!important;
+  border-bottom:1px solid rgba(233,177,47,.08)!important;
+}
+
+main > .zamm-posthero-theme.zamm-posthero-black::before{
+  opacity:.18!important;
+  background-image:
+    linear-gradient(rgba(233,177,47,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(233,177,47,.055) 1px,transparent 1px)!important;
+}
+
+.zamm-posthero-black h1,
+.zamm-posthero-black h2,
+.zamm-posthero-black h3,
+.zamm-posthero-black h4,
+.zamm-posthero-black h5,
+.zamm-posthero-black h6,
+.zamm-posthero-black .section-title,
+.zamm-posthero-black .section-heading{
+  color:#fff!important;
+}
+
+.zamm-posthero-black p,
+.zamm-posthero-black li,
+.zamm-posthero-black dd,
+.zamm-posthero-black address,
+.zamm-posthero-black .muted,
+.zamm-posthero-black .section-subtitle,
+.zamm-posthero-black .section-copy{
+  color:var(--zamm-muted-light)!important;
+}
+
+.zamm-posthero-black .eyebrow,
+.zamm-posthero-black .section-kicker,
+.zamm-posthero-black .overline,
+.zamm-posthero-black .label{
+  color:var(--zamm-gold-light)!important;
+}
+
+.zamm-posthero-black a:not(.btn){
+  color:var(--zamm-gold-light)!important;
+}
+
+/* Dark raised cards on black sections */
+.zamm-posthero-black :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form,
+  .map-frame,
+  .mission-card,
+  .vision-card,
+  .serve-card,
+  .stat-card,
+  .feature-card,
+  .content-card
+){
+  color:#f7f4ec!important;
+  border:1px solid rgba(233,177,47,.28)!important;
+  background:
+    linear-gradient(145deg,rgba(17,26,37,.98),rgba(8,12,18,.98))!important;
+  box-shadow:
+    inset 4px 0 0 var(--zamm-gold),
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 14px 30px rgba(0,0,0,.27),
+    0 30px 68px rgba(0,0,0,.20)!important;
+}
+
+.zamm-posthero-black :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form
+) h3,
+.zamm-posthero-black .faq summary{
+  color:#fff!important;
+}
+
+.zamm-posthero-black :is(
+  .service-card,
+  .process-card,
+  .project-feature,
+  .showcase-card,
+  .industry-card,
+  .value-card,
+  .deliverable,
+  .moving-review-card,
+  .about-depth-card,
+  .founder-card,
+  .contact-card,
+  .local-seo-card,
+  .blog-card,
+  .sidebar-card,
+  .sticky-card,
+  .article-callout,
+  .article-faq-block,
+  .faq,
+  .contact-form
+) p{
+  color:#c9c5bc!important;
+}
+
+/* Keep alternating sections joined without white gaps */
+main > .zamm-posthero-theme + .zamm-posthero-theme{
+  margin-top:0!important;
+}
+
+/* Dark CTA bands remain readable on either section */
+.zamm-posthero-gold .cta-band-inner,
+.zamm-posthero-black .cta-band-inner{
+  border:1px solid rgba(233,177,47,.38)!important;
+  background:
+    radial-gradient(circle at 92% 10%,rgba(233,177,47,.14),transparent 30%),
+    linear-gradient(145deg,#08111d,#04070b)!important;
+}
+
+.zamm-posthero-gold .cta-band-inner h2,
+.zamm-posthero-gold .cta-band-inner h3,
+.zamm-posthero-gold .cta-band-inner p{
+  color:#fff!important;
+}
+
+/* Tables */
+.zamm-posthero-gold table{
+  color:var(--zamm-ink)!important;
+  background:rgba(255,250,235,.88)!important;
+}
+
+.zamm-posthero-gold th{
+  color:#07182c!important;
+  background:rgba(101,61,0,.12)!important;
+}
+
+.zamm-posthero-gold td,
+.zamm-posthero-gold th{
+  border-color:rgba(87,50,0,.18)!important;
+}
+
+/* Mobile and tablet refinements */
+@media(max-width:1050px){
+  main > .zamm-posthero-theme.zamm-posthero-gold{
+    background:
+      radial-gradient(circle at 88% 9%,rgba(255,255,255,.38),transparent 25%),
+      linear-gradient(145deg,#f5d473 0%,#e9b12f 58%,#cb8d17 100%)!important;
+  }
+
+  main > .zamm-posthero-theme.zamm-posthero-black{
+    background:
+      radial-gradient(circle at 90% 8%,rgba(233,177,47,.11),transparent 25%),
+      linear-gradient(150deg,#05070a 0%,#090d13 100%)!important;
+  }
+
+  .zamm-posthero-gold :is(
+    .service-card,
+    .process-card,
+    .project-feature,
+    .showcase-card,
+    .industry-card,
+    .value-card,
+    .deliverable,
+    .moving-review-card,
+    .about-depth-card,
+    .founder-card,
+    .contact-card,
+    .local-seo-card,
+    .blog-card,
+    .sidebar-card,
+    .sticky-card,
+    .article-callout,
+    .article-faq-block,
+    .faq,
+    .contact-form,
+    .map-frame
+  ){
+    box-shadow:
+      inset 3px 0 0 #7d4b00,
+      0 14px 31px rgba(91,52,0,.15)!important;
+  }
+
+  .zamm-posthero-black :is(
+    .service-card,
+    .process-card,
+    .project-feature,
+    .showcase-card,
+    .industry-card,
+    .value-card,
+    .deliverable,
+    .moving-review-card,
+    .about-depth-card,
+    .founder-card,
+    .contact-card,
+    .local-seo-card,
+    .blog-card,
+    .sidebar-card,
+    .sticky-card,
+    .article-callout,
+    .article-faq-block,
+    .faq,
+    .contact-form,
+    .map-frame
+  ){
+    box-shadow:
+      inset 3px 0 0 var(--zamm-gold),
+      0 14px 31px rgba(0,0,0,.25)!important;
+  }
+}

@@ -1,0 +1,8 @@
+HTML pages converted to static responsive shells: 65
+Old delayed mobile-layout replacement scripts removed: 65
+Duplicate mobile-reference folder removed: yes
+Packaged local raster images: WebP only
+Packaged WebP images: 19
+Remote image elements include a local WebP fallback.
+Remote CSS background photographs include a local WebP fallback.
+All local HTML, CSS, JavaScript, manifest, image and page references validated.

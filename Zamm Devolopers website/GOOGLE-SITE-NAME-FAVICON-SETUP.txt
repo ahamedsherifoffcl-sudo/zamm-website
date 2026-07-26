@@ -1,0 +1,15 @@
+Google site-name and favicon setup completed
+============================================
+
+- Preferred site name: Zamm Devolopers
+- Homepage WebSite structured data: included
+- Homepage LocalBusiness/Organization logo: 512x512 PNG
+- og:site_name: Zamm Devolopers on all HTML pages
+- Exact brand included in every page title
+- Search favicon: /favicon-96x96.png
+- Fallback favicon: /favicon-48x48.png and /favicon.ico
+- Favicon and homepage are crawlable in robots.txt
+- Stable canonical hostname: https://zammdevolopers.in/
+
+After deployment, request homepage indexing in Google Search Console.
+Google controls when the updated site name and favicon appear after recrawling.

@@ -1,0 +1,17 @@
+ZAMM DEVOLOPERS — NETLIFY, GODADDY & GOOGLE LAUNCH CHECKLIST
+
+1. Deploy this folder as a fresh Netlify production deployment. Do not merge it into an older build.
+2. In Netlify, add zammdevolopers.in as the primary custom domain.
+3. Add www.zammdevolopers.in as a domain alias. The included redirects force visitors to https://zammdevolopers.in.
+4. In GoDaddy DNS, use the exact Netlify DNS records shown in your Netlify domain setup screen.
+5. Wait until Netlify shows HTTPS enabled and the custom domain is verified.
+6. Open these live URLs and confirm they load:
+   - https://zammdevolopers.in/
+   - https://zammdevolopers.in/favicon.ico
+   - https://zammdevolopers.in/robots.txt
+   - https://zammdevolopers.in/sitemap.xml
+7. Add the DOMAIN property zammdevolopers.in in Google Search Console and verify it through the DNS TXT record.
+8. Submit https://zammdevolopers.in/sitemap.xml in Search Console.
+9. Use URL Inspection to request indexing for the homepage and main commercial service pages.
+10. Keep the business name exactly “Zamm Devolopers” on the website, Google Business Profile and other trusted profiles.
+11. Google chooses the displayed site name and favicon automatically. The website now supplies the strongest recommended signals, but Google may need multiple crawls before the result changes.

@@ -1,0 +1,214 @@
+/* Final WhatsApp icon and rendering fixes */
+.action-icon-svg{
+  display:block!important;
+  width:22px!important;
+  height:22px!important;
+  flex:0 0 auto!important;
+}
+
+.header-actions .icon-btn.whatsapp{
+  background:#18aa63!important;
+  color:#fff!important;
+  border-color:#18aa63!important;
+}
+
+.header-actions .icon-btn.whatsapp:hover{
+  background:#128f53!important;
+  border-color:#128f53!important;
+}
+
+.float-btn.whatsapp{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  background:#18aa63!important;
+  color:#fff!important;
+}
+
+.float-btn.whatsapp::before{
+  content:none!important;
+  display:none!important;
+}
+
+.float-icon{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  line-height:0!important;
+}
+
+.float-label{
+  display:inline-block!important;
+}
+
+@media(max-width:560px){
+  .floating-actions .float-btn.whatsapp{
+    width:48px!important;
+    min-width:48px!important;
+    height:48px!important;
+    padding:0!important;
+    border-radius:50%!important;
+  }
+
+  .floating-actions .float-btn.whatsapp .float-label{
+    display:none!important;
+  }
+
+  .floating-actions .float-btn.whatsapp .action-icon-svg{
+    width:21px!important;
+    height:21px!important;
+  }
+}
+
+
+/* =========================================================
+   Clearly visible Powered by ZAMM credit — desktop and mobile
+   ========================================================= */
+.footer{
+  padding-bottom:34px!important;
+}
+
+.footer-bottom{
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr!important;
+  align-items:center!important;
+  gap:16px 24px!important;
+  margin-top:52px!important;
+  padding-top:22px!important;
+}
+
+.footer-bottom > span:first-child{
+  justify-self:start!important;
+}
+
+.footer-bottom > span:nth-child(2){
+  justify-self:center!important;
+}
+
+.footer-bottom .powered-by-zamm{
+  grid-column:1 / -1!important;
+  grid-row:2!important;
+  justify-self:center!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  min-height:38px!important;
+  margin-top:4px!important;
+  padding:0 18px!important;
+  border:1px solid rgba(233,177,47,.48)!important;
+  border-radius:999px!important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(233,177,47,.13),
+      rgba(233,177,47,.055)
+    )!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.09),
+    0 9px 24px rgba(0,0,0,.20)!important;
+  color:#d6e0ea!important;
+  font-size:11px!important;
+  font-weight:700!important;
+  line-height:1!important;
+  letter-spacing:.075em!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+
+.footer-bottom .powered-by-zamm .powered-label{
+  color:#d6e0ea!important;
+}
+
+.footer-bottom .powered-by-zamm .powered-brand{
+  color:#f0bd3c!important;
+  font-size:13px!important;
+  font-weight:900!important;
+  letter-spacing:.13em!important;
+  text-shadow:0 2px 10px rgba(233,177,47,.18)!important;
+}
+
+@media(max-width:1050px){
+  .footer{
+    padding-bottom:98px!important;
+  }
+
+  .footer-bottom{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:13px!important;
+    margin-top:36px!important;
+    padding-top:20px!important;
+    text-align:center!important;
+  }
+
+  .footer-bottom > span{
+    justify-self:auto!important;
+    width:auto!important;
+    text-align:center!important;
+  }
+
+  .footer-bottom .powered-by-zamm{
+    order:3!important;
+    min-height:40px!important;
+    margin-top:3px!important;
+    padding-inline:19px!important;
+  }
+}
+
+@media(max-width:560px){
+  .footer{
+    padding-bottom:90px!important;
+  }
+
+  .footer-bottom{
+    gap:12px!important;
+    margin-top:31px!important;
+  }
+
+  .footer-bottom .powered-by-zamm{
+    min-height:39px!important;
+    padding-inline:17px!important;
+    font-size:10px!important;
+  }
+
+  .footer-bottom .powered-by-zamm .powered-brand{
+    font-size:12px!important;
+  }
+}
+
+
+/* Bottom floating Call/WhatsApp buttons removed */
+.footer{
+  padding-bottom:34px!important;
+}
+
+@media(max-width:1050px){
+  .footer{
+    padding-bottom:38px!important;
+  }
+}
+
+@media(max-width:560px){
+  .footer{
+    padding-bottom:32px!important;
+  }
+}
+
+/* Responsive founder portrait crops — 2026-07-26 */
+.founder-portrait.founder-photo picture{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+}
+.founder-portrait.founder-photo picture img{
+  object-position:center center!important;
+}

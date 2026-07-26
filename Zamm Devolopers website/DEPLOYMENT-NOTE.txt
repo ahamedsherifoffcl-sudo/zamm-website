@@ -1,0 +1,26 @@
+Deploy this ZIP as a complete replacement, not as a merge with an older folder.
+The mobile and desktop layouts are now present as static responsive shells selected by CSS before first paint.
+There is no delayed JavaScript layout replacement and no hidden-body loading stage.
+
+Mobile homepage hero update:
+- Enlarged and redistributed mobile hero content.
+- Added a compact website-support information block.
+- Moved benefit tags above the CTA buttons.
+- Anchored CTA buttons at the bottom of the mobile hero.
+- Homepage hero background image and overlays were not changed.
+- Laptop view and every other page remain unchanged.
+
+Mobile CTA and quotation update:
+- Simplified every mobile CTA panel with a clean dark surface and controlled gold accents.
+- Improved mobile heading, paragraph and button contrast.
+- Every mobile Request a Quote button now opens contact.html#mobile-application-form.
+- Every desktop Request a Quote button opens contact.html#application-form.
+- Added smooth scrolling and focus to the application form.
+- Hero backgrounds and hero layouts were not changed.
+
+
+SEO final update — 26 July 2026:
+- Deploy as a complete replacement.
+- Submit /sitemap.xml after deployment.
+- Duplicate blog topics are consolidated through 301 redirects.
+- Desktop/mobile layout and all hero backgrounds remain unchanged.

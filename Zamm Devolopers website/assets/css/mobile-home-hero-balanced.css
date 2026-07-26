@@ -1,0 +1,196 @@
+/* Mobile homepage hero balance.
+   This stylesheet changes content spacing only.
+   The existing hero background image and overlays are untouched. */
+
+.home-page #mobile-home-hero{
+  min-height:calc(100svh - 68px)!important;
+  padding:0!important;
+}
+
+.home-page #mobile-home-hero .hero-grid-v2{
+  min-height:calc(100svh - 68px)!important;
+  width:100%!important;
+}
+
+.home-page #mobile-home-hero .hero-copy-v2{
+  min-height:calc(100svh - 68px)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  padding:
+    clamp(42px,7.5svh,76px)
+    5px
+    clamp(20px,3svh,32px)!important;
+}
+
+.home-page #mobile-home-hero .hero-copy-v2 h1{
+  order:1!important;
+  max-width:370px!important;
+  margin:0 auto!important;
+  font-size:clamp(45px,11.8vw,57px)!important;
+  line-height:.975!important;
+  letter-spacing:-.06em!important;
+}
+
+.home-page #mobile-home-hero .hero-mobile-description{
+  order:2!important;
+  max-width:354px!important;
+  margin:clamp(20px,2.8svh,28px) auto 0!important;
+  font-size:clamp(12.8px,3.35vw,14px)!important;
+  line-height:1.58!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support{
+  order:3!important;
+  width:min(100%,354px)!important;
+  margin:clamp(22px,3.2svh,34px) auto 0!important;
+  padding:15px 15px 14px!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  border-radius:18px!important;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(6,20,38,.58),
+      rgba(6,20,38,.34)
+    )!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    0 16px 34px rgba(0,0,0,.18)!important;
+  backdrop-filter:blur(7px)!important;
+  -webkit-backdrop-filter:blur(7px)!important;
+  text-align:left!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support-label{
+  display:block!important;
+  margin-bottom:6px!important;
+  color:#f2bd3a!important;
+  font-size:8.5px!important;
+  font-weight:900!important;
+  line-height:1.2!important;
+  letter-spacing:.14em!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support strong{
+  display:block!important;
+  color:#fff!important;
+  font-size:14px!important;
+  font-weight:850!important;
+  line-height:1.38!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.34)!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support p{
+  margin:7px 0 0!important;
+  color:rgba(255,255,255,.86)!important;
+  font-size:10.8px!important;
+  font-weight:500!important;
+  line-height:1.52!important;
+  text-shadow:0 2px 9px rgba(0,0,0,.34)!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support-points{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:6px!important;
+  margin-top:10px!important;
+}
+
+.home-page #mobile-home-hero .mobile-hero-support-points span{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:25px!important;
+  padding:4px 9px!important;
+  border:1px solid rgba(233,177,47,.42)!important;
+  border-radius:999px!important;
+  background:rgba(233,177,47,.10)!important;
+  color:#ffe09a!important;
+  font-size:8.5px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  letter-spacing:.025em!important;
+}
+
+/* Benefits are placed above the CTA buttons. */
+.home-page #mobile-home-hero .hero-tags{
+  order:4!important;
+  width:100%!important;
+  margin-top:auto!important;
+  padding-top:clamp(22px,3.5svh,36px)!important;
+  gap:8px!important;
+}
+
+.home-page #mobile-home-hero .hero-tags span{
+  min-height:40px!important;
+  padding:8px 10px!important;
+  font-size:9.4px!important;
+}
+
+/* CTA buttons become the final content at the bottom of the hero. */
+.home-page #mobile-home-hero .hero-actions{
+  order:5!important;
+  width:100%!important;
+  margin-top:13px!important;
+  margin-bottom:0!important;
+  gap:10px!important;
+}
+
+.home-page #mobile-home-hero .hero-actions .btn{
+  min-height:56px!important;
+  border-radius:15px!important;
+  font-size:12.7px!important;
+}
+
+/* Keep the layout practical on shorter mobile browser viewports. */
+@media (max-height:760px){
+  .home-page #mobile-home-hero .hero-copy-v2{
+    padding-top:28px!important;
+    padding-bottom:17px!important;
+  }
+
+  .home-page #mobile-home-hero .hero-copy-v2 h1{
+    font-size:clamp(40px,10.8vw,49px)!important;
+  }
+
+  .home-page #mobile-home-hero .hero-mobile-description{
+    margin-top:14px!important;
+    font-size:12px!important;
+    line-height:1.48!important;
+  }
+
+  .home-page #mobile-home-hero .mobile-hero-support{
+    margin-top:15px!important;
+    padding:12px 13px!important;
+  }
+
+  .home-page #mobile-home-hero .mobile-hero-support p{
+    display:none!important;
+  }
+
+  .home-page #mobile-home-hero .hero-tags{
+    padding-top:15px!important;
+  }
+
+  .home-page #mobile-home-hero .hero-tags span{
+    min-height:35px!important;
+  }
+
+  .home-page #mobile-home-hero .hero-actions .btn{
+    min-height:50px!important;
+  }
+}
+
+@media (max-width:370px){
+  .home-page #mobile-home-hero .hero-copy-v2 h1{
+    font-size:41px!important;
+  }
+
+  .home-page #mobile-home-hero .mobile-hero-support,
+  .home-page #mobile-home-hero .hero-mobile-description{
+    max-width:326px!important;
+  }
+
+  .home-page #mobile-home-hero .hero-actions .btn{
+    font-size:11.5px!important;
+  }
+}
