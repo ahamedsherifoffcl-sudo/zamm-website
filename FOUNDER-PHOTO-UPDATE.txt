@@ -1,10 +1,4 @@
-ZAMM DEVOLOPERS — FOUNDER PHOTO UPDATE
-Date: 2026-07-26
-
-Updated the “Meet the Founder” section on the About page with the newly supplied photo of Ahamed Sherif.
-
-Responsive image files:
-- assets/images/ahamed-sherif-founder-desktop.webp — 4:5 crop for laptop/desktop cards
-- assets/images/ahamed-sherif-founder-mobile.webp — 3:4 crop for mobile/tablet layouts
-
-The browser loads the appropriate crop through a responsive <picture> element. Existing desktop and mobile page layouts, copy, calls to action, and SEO metadata remain unchanged.
+Founder photo updated with the newly supplied professional portrait.
+Desktop asset: assets/images/ahamed-sherif-founder-desktop.webp (880x1100).
+Mobile asset: assets/images/ahamed-sherif-founder-mobile.webp (930x1240).
+Google Maps link updated to: https://maps.app.goo.gl/8sieSa8YExcvSXPXA?g_st=aw

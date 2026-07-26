@@ -141,7 +141,7 @@
         {'@type':'Offer','itemOffered':{'@type':'Service','name':'Website Redesign and Maintenance','url':new URL('/website-redesign-maintenance.html', SITE_ORIGIN).href}}
       ]
     },
-    hasMap: 'https://maps.app.goo.gl/UwPs9bBRGPAQYCLh7'
+    hasMap: 'https://maps.app.goo.gl/8sieSa8YExcvSXPXA?g_st=aw'
   };
 
   const website = {
